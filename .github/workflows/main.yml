@@ -657,7 +657,7 @@ jobs:
       - name: 发送 Telegram 社区群组通知
         env:
           BOT_TOKEN: ${{ secrets.BOT_TOKEN }}
-          CHAT_ID: ${{ secrets.CHAT_ID_2 }}
+          CHAT_ID_2: ${{ secrets.CHAT_ID_2 }}
           message_thread_id: ${{secrets.MESSAGE_THREAD_ID}}
         run: |
           set -euo pipefail
